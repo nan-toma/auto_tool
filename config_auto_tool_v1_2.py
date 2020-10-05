@@ -72,7 +72,7 @@ with open("config_tool_pass.txt") as f:
     #TRIOSのID
     T_ID = pass_file[2].rstrip("\n")
 
-    #FMSのpassword
+    #TRIOSのpassword
     T_password = pass_file[3].rstrip("\n") 
 
 #証明書エラーを無視する

@@ -1,0 +1,34 @@
+
+/* Gmailから特定条件のスレッドを検索しメールを取り出す */
+var srchCondition = 'MSAN OSPF down/up check'; //検索条件指定　//Gmailで検索窓に入れる内容
+var strTerms = 'after:'+ term +' '+ srchCondition; //検索条件：termの期間に、srchConditionの条件に合致するメール
+var myThreads = GmailApp.search(strTerms, 0, 1); //最新のメール1件を取り出す
+var myMsgs = GmailApp.getMessagesForThreads(myThreads); //スレッドからメールを取得する　//二次元配列
+
+/* メールから日時、送信元、件名、内容を取り出す */
+for(var i=0;i<myMsgs.length;i++){
+for(var j=0;j<myMsgs[i].length;j++){
+　　　var date = myMsgs[i][j].getDate();
+　　　var from = myMsgs[i][j].getFrom();
+　　　var subj = myMsgs[i][j].getSubject();
+　　　var body = myMsgs[i][j].getPlainBody().slice(0,200);     
+    Logger.log(myMsgs[i][0].getBody());  //各スレッドの1番目のメールのbodyをログ出力
+    var myBody1 = myMsgs[i][0].getBody();
+　　}
+　}
+
+　/* スプレッドシートに出力 */
+var mySheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('日勤定常チェックシート');
+var dat = mySheet.getDataRange().getValues(); //受け取ったシートのデータを二次元配列に取得
+for(var i=1;i<dat.length;i++){
+var strData = dat[i][4];
+if(strData.match(/MSAN OSPF 定時チェック/)){ //該当行を検索し行数を取得
+    i = i+1;
+    break;
+}
+}
+mySheet.getRange(i, 8).setNote(myBody1); //セルにメモを挿入
+　if(myBody1.match(/OK/)){
+mySheet.getRange(i, 8).activate();
+mySheet.getRange(i, 8).setValue('完了');
+}

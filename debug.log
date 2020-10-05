@@ -1,0 +1,20 @@
+[0820/105728.485:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0820/105728.492:ERROR:exception_snapshot_win.cc(98)] thread ID 97488 not found in process
+[0820/105728.520:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0820/105728.520:ERROR:exception_snapshot_win.cc(98)] thread ID 75904 not found in process
+[0824/160141.165:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0824/160141.165:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0824/160141.179:ERROR:exception_snapshot_win.cc(98)] thread ID 21048 not found in process
+[0824/160141.181:ERROR:exception_snapshot_win.cc(98)] thread ID 18652 not found in process
+[0824/160141.211:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0824/160141.211:ERROR:exception_snapshot_win.cc(98)] thread ID 20952 not found in process
+[0824/160141.212:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0824/160141.212:ERROR:exception_snapshot_win.cc(98)] thread ID 21116 not found in process
+[0901/153331.395:ERROR:process_reader_win.cc(151)] SuspendThread: アクセスが拒否されました。 (0x5)
+[0901/153331.415:ERROR:process_reader_win.cc(151)] SuspendThread: アクセスが拒否されました。 (0x5)
+[0901/153331.415:ERROR:process_reader_win.cc(151)] SuspendThread: アクセスが拒否されました。 (0x5)
+[0901/153331.415:ERROR:process_reader_win.cc(151)] SuspendThread: アクセスが拒否されました。 (0x5)
+[0901/153331.415:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0901/153331.416:ERROR:exception_snapshot_win.cc(98)] thread ID 25076 not found in process
+[0901/153331.423:ERROR:process_reader_win.cc(123)] NtOpenThread: {アクセス拒否} プロセスはオブジェクトのアクセスを要求しましたが、アクセス権が与えられていません。 (0xc0000022)
+[0901/153331.423:ERROR:exception_snapshot_win.cc(98)] thread ID 25336 not found in process
